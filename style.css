@@ -1,16 +1,42 @@
-*{
+/* for all default page view */
+* {
     padding: 0;
     margin: 0;
 }
+
+/* mainBody  */
 .mainBody {
     background: linear-gradient(40deg, #27374D, #526D82);
     width: 100%;
 }
 
-.navBar{
-    display: inline-flex;
+
+/* navBar styles */
+.navBar {
+    position: relative;
+    display: flex;
     padding: 20px 8px;
+    justify-content: space-between;
+    align-items: center;
 }
-.navBar h3{
-    margin-right: 20px;
+
+
+/* only for h2 or logo */
+.navBar h2 {
+    margin-left: 100px;
+}
+
+
+/* for list style  */
+.navBar ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin-right: 200px;
+}
+
+
+/* for making them in little center */
+.navBar li {
+    margin: 0% 40px;
 }
