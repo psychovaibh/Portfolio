@@ -18,6 +18,8 @@
     padding: 20px 8px;
     justify-content: space-between;
     align-items: center;
+    height: 25px;
+    background-color: transparent;
 }
 
 
@@ -39,4 +41,23 @@
 /* for making them in little center */
 .navBar li {
     margin: 0% 40px;
+}
+
+.sections{
+    display: flex;
+    justify-content: space-around;
+    margin: 80px 10px;
+}
+
+.leftPart{
+    width: 50%;
+    margin: 60px 50px;
+    font-size: 3.5rem;
+    display: flex;
+    justify-content: center;
+}
+
+.rightPart img{
+    height: 500px;
+    width: 100%;
 }
