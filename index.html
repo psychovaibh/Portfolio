@@ -21,13 +21,22 @@
         </div>
         <div class="sections">
             <div class="leftPart">
-                <h3>I'm a Programmer</h3>
+                Hello! I am <span class="color" id="name"> Vaibhav </span>
+                <div>and i'm a Passionate</div>
+                <span class="color" id="element"></span>
             </div>
             <div class="rightPart">
                 <img src="/5852cd5558215f0354495f66.png" alt="img error">
             </div>
         </div>
     </div>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Programmer', "Web Developer", "Gamer", "Traveller"],
+            typeSpeed: 100,
+        });
+    </script>
 </body>
 
 </html>
