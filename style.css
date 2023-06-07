@@ -15,7 +15,7 @@
 .navBar {
     position: relative;
     display: flex;
-    padding: 20px 8px;
+    padding: 50px 10px;
     justify-content: space-between;
     align-items: center;
     height: 25px;
@@ -43,21 +43,43 @@
     margin: 0% 40px;
 }
 
-.sections{
+.sections {
     display: flex;
     justify-content: space-around;
     margin: 80px 10px;
 }
 
-.leftPart{
+.leftPart {
     width: 50%;
-    margin: 60px 50px;
-    font-size: 3.5rem;
-    display: flex;
+    height: 400px;
+    margin: 80px auto;
     justify-content: center;
+    font-size: 3rem;
+    align-items: center;
+    word-spacing: 10px;
 }
 
-.rightPart img{
+.rightPart {
+    align-items: center;
+    margin: 0px auto;
+}
+
+.rightPart img {
     height: 500px;
     width: 100%;
+    box-shadow: 20px 8px 20px 1px #27374D;
+    border-radius: 30px;
+}
+
+.leftPart h3 {
+    display: inline-flex;
+}
+
+.leftPart h3 ul {
+    list-style: none;
+    margin-left: 25px;
+}
+
+.color {
+    color: rgb(116, 116, 245);
 }
