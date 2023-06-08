@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="android-chrome-512x512.png" type="image/x-icon">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@700&display=swap');
+    </style>
+</head>
+
+<body>
+    <div class="mainBody">
+        <div class="navBar">
+            <h2>Portfolio</h5>
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="#about">Education</a></li>
+                    <li><a href="#skill">Skill</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+        </div>
+
+        <!-- sections start from here -->
+
+        <div class="sections">
+            <div class="leftPart">
+                Hello! I am <span class="color" id="name"> Vaibhav </span>
+                <div>and i'm a Passionate</div>
+                <span class="color" id="element"></span>
+            </div>
+            <div class="rightPart">
+                <img src="/5852cd5558215f0354495f66.png" alt="img error">
+            </div>
+        </div>
+        <hr>
+        <div class="about" id="about">
+            <h3>My Education till now</h3>
+            <div class="box">
+                <div class="vertical">
+                    <div class="title">
+                        BSEH 10th (2016-2017)
+                    </div>
+                    <div class="description">
+                        score 84.6%
+                    </div>
+                </div>
+                <div class="vertical">
+                    <div class="title">
+                        BSEH 12th-N.M (2018-2019)
+                    </div>
+                    <div class="description">
+                        score 76.5%
+                    </div>
+                </div>
+                <div class="vertical">
+                    <div class="title">
+                        BSC(C.S) GJU-HISAR (2019-2023)
+                    </div>
+                    <div class="description">
+                        score 60.0%
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr>
+
+
+        <!-- skill part start here -->
+
+        <div id="skill">
+            <h3>Skills</h3>
+            <div class="skill">
+                <div class="skills">
+                    <p>HTML</p>
+                    <p id="html"></p>
+                </div>
+
+                <div class="skills">
+                    <p>CSS</p>
+                    <p id="css"></p>
+                </div>
+
+                <div class="skills">
+                    <p>JS</p>
+                    <p id="js"></p>
+                </div>
+
+                <div class="skills">
+                    <p>PYTHON</p>
+                    <p id="python"></p>
+                </div>
+            </div>
+            <p id="extra-skill">Extra skills are:<span> Linux, Mysql, Fast Learner, Coomunication, friendly</span> </p>
+        </div>
+
+        <hr>
+
+        <div class="footer" id="contact">
+            <p>Contact Me</p>
+            <div class="details">
+                <div class="detailsone">
+                    <span><i class="fa-solid fa-phone fa-fade" style="color: #000000;"></i> +91 856-999-153-3</span>
+                    <br>
+                    <span><i class="fa-regular fa-envelope fa-fade" style="color: #000000;"></i>
+                        Vibuvaibhav1@gmail.com</span>
+                    <br>
+                    <span><i class="fa-solid fa-location-dot fa-fade" style="color: #000000;"></i>
+                        Bhiwani(Haryana)</span>
+                </div>
+                <div class="detailstwo">
+                    <a href="https://github.com/psychovaibh" target="_blank"><i class="fa-brands fa-github fa-fade"
+                            style="color: #000000;"></i> Git Hub</a>
+                    <br>
+                    <a href="https://www.linkedin.com/in/vaibh-av-89337a24b/" target="_blank"><i
+                            class="fa-brands fa-linkedin fa-fade" style="color: #000000;"></i> Linkedin</a>
+                    <br>
+                    <a href="https://www.instagram.com/its_vaibh_sanatani/" target="_blank"><i
+                            class="fa-brands fa-instagram fa-fade" style="color: #000000;"></i> Instagram</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://kit.fontawesome.com/2d4117dc28.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script src="/index.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Programmer', "Web Developer", "Gamer", "Traveller"],
+            typeSpeed: 100,
+            backSpeed: 100,
+            loop: true,
+        });
+    </script>
+</body>
+
+</html>
