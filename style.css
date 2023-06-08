@@ -2,7 +2,27 @@
 * {
     padding: 0;
     margin: 0;
+    font-family: 'Oxygen', sans-serif;
+    color: black;
 }
+
+
+/* for scrool Bar */
+
+
+body::-webkit-scrollbar {
+    width: 0.8rem;
+    background-color: #4d627f;
+}
+
+body::-webkit-scrollbar-thumb {
+    background: linear-gradient(40deg, #27374D, #526D82);
+    outline: 1px solid rgb(1, 22, 42);
+}
+
+
+/* ------------------------------------------------------------------------ */
+
 
 /* mainBody  */
 .mainBody {
@@ -11,15 +31,26 @@
 }
 
 
+
+
+/* Navigation Bar styles start from here: */
+
+
+
 /* navBar styles */
 .navBar {
-    position: relative;
+    position: sticky;
+    z-index: 9999;
+    top: 0;
     display: flex;
-    padding: 20px 8px;
+    flex-wrap: wrap;
+    padding: 20px 10px;
     justify-content: space-between;
     align-items: center;
     height: 25px;
-    background-color: transparent;
+    background: #27374D;
+    box-shadow: inset 0px 2px 49px 10px #2a3b52;
+
 }
 
 
@@ -33,6 +64,7 @@
 .navBar ul {
     list-style: none;
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     margin-right: 200px;
 }
@@ -40,24 +72,171 @@
 
 /* for making them in little center */
 .navBar li {
-    margin: 0% 40px;
+    margin: 0 40px;
 }
 
-.sections{
+.navBar ul li a {
+    text-decoration: none;
+}
+
+
+
+
+/* ------------------------------------------------------------------------ */
+
+
+
+/* home page starting from here: */
+
+
+
+/* main section for home start */
+.sections {
     display: flex;
     justify-content: space-around;
     margin: 80px 10px;
+    height: 500px;
 }
 
-.leftPart{
+
+/* left part for hello!  */
+
+.leftPart {
     width: 50%;
-    margin: 60px 50px;
-    font-size: 3.5rem;
+    height: 400px;
+    margin: 80px auto;
+    justify-content: center;
+    font-size: 3rem;
+    align-items: center;
+    word-spacing: 10px;
+}
+
+.leftPart h3 {
+    display: inline-flex;
+}
+
+.leftPart h3 ul {
+    list-style: none;
+    margin-left: 25px;
+}
+
+.color {
+    color: rgb(116, 116, 245);
+}
+
+
+
+
+/* for right part image  */
+
+.rightPart {
+    align-items: center;
+    margin: 0px auto;
+}
+
+.rightPart img {
+    height: 500px;
+    width: 100%;
+    box-shadow: 20px 9px 20px 1px #27374D;
+    border: 0;
+    border-color: transparent;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+
+.mainBody hr {
+    margin: 10px 3%;
+    border: 0;
+    height: 4px;
+    background-color: #020f22;
+}
+
+/* end of home page here */
+
+/* ------------------------------------------------------------------------ */
+
+
+
+
+/* about paart start from here */
+
+.about {
+    padding-top: 90px;
+    height: 600px;
+    max-width: 80vw;
+    margin: auto;
+}
+
+.about h3 {
+    font-size: 1.7rem;
+    text-decoration: underline;
+    align-items: center;
+    position: relative;
     display: flex;
     justify-content: center;
 }
 
-.rightPart img{
-    height: 500px;
-    width: 100%;
+.about .box {
+    background-color: rgb(119, 156, 186);
+    width: 80vw;
+    height: 1.5px;
+    margin: 56px 0;
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.about .vertical {
+    height: 140px;
+    width: 1px;
+    background-color: rgb(119, 156, 186);
+}
+
+.vertical .title {
+    position: relative;
+    top: 150px;
+    width: 290px;
+    font-size: 1.5rem;
+}
+
+.vertical .description {
+    position: relative;
+    top: 158px;
+    font-size: 1rem;
+    width: 150px;
+    color: rgb(116, 116, 245);
+}
+
+
+
+
+/* ------------------------------------------------------------------------ */
+
+
+
+
+/* footer part start */
+
+
+.footer{
+    padding-top: 70px;
+    margin:auto;
+    height: 300px;
+}
+.footer p{
+    display: flex;
+    justify-content: center;
+    font-size: 1.7rem;
+    text-decoration: underline;
+}
+
+.footer .details{
+  font-size: 1rem;
+  display: flex;
+  margin-top: 60px;
+  justify-content: space-around;
+}
+
+.footer .detailstwo a{
+    text-decoration: none;
 }
